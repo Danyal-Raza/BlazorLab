@@ -1,0 +1,12 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+<h3>TwoWay Binding</h3>
+
+<p>Your name: @name</p>
+
+<input @bind-value="@name" @bind-value:event="oninput" />
+
+@code {
+    private string name = "John";
+}
